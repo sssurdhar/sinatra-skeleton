@@ -8,8 +8,13 @@ class CreateTables < ActiveRecord::Migration
             t.timestamps
         end
 
-        create_table :table do |t|
+        create_table :pins do |t|
             # Your code goes here
+            t.string :user
+            t.string :board
+            t.string :comment
+            t.string :link
+            t.text :description
             t.timestamps
         end
 
